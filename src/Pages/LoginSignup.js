@@ -33,7 +33,7 @@ import "./CSS/loginsignup.css";
 
 const LoginSignup = () => {
     return (
-        <div className='container'>
+        <div className='container my-4'>
             <div className='row justify-content-center align-items-center'>
                 <div className='col-md-6'>
                     <div className="loginsignup-container">

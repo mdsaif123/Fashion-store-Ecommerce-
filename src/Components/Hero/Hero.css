@@ -2,11 +2,16 @@
 
 .hero {
     height: 100vh;
-    background: linear-gradient(180deg, #ed7b41, #e1ffea22 60%);
+    /* background: linear-gradient(180deg, #ed7b41, #e1ffea22 60%); */
+    background: linear-gradient(rgba(0, 7, 58, 0.7),rgba(11, 1, 29, 0.7)), url("https://www.firstforwomen.com/wp-content/uploads/sites/2/2020/10/womens-clothing-store.jpg?resize=630");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
+    color: white;
   }
   .hero-left{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,13 +20,13 @@
     line-height: 1.1;
   }
   .hero-left h2{
-    color: #090909;
+    color: #ff6518;
     font-size: 20px;
     font-weight: 600;
   }
   .hero-left p{
-    color: #171717;
-    font-size: 55px;
+    color: #ff6518;
+    font-size: 50px;
     font-weight: 600;
   }
   .hero-hand-icon{
@@ -77,7 +82,7 @@
     
   }
   .hero-left p{
-    color: #171717;
+    color: #ff6518;
     font-size: 40px;
     font-weight: 500;
   }
@@ -113,7 +118,11 @@
   }
   .hero {
     height: 50vh;
-    background: linear-gradient(180deg, #ed7b41, #e1ffea22 60%);
+    background: linear-gradient(rgba(0, 7, 58, 0.7),rgba(11, 1, 29, 0.7)), url("https://www.firstforwomen.com/wp-content/uploads/sites/2/2020/10/womens-clothing-store.jpg?resize=630");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
     display: flex;
   }
   .hero-left h2{

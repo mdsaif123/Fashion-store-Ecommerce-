@@ -3,11 +3,12 @@
 import React, { useContext, useState, useRef } from 'react';
 import "./Navbar.css";
 
-import logo from "../Assets/logo.png";
+import logo from "../Assets/newlogo.jpg";
 import cart_icon from "../Assets/cart_icon.png";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
 import arrow_icon from "../Assets/arrow.jpg"
+import { CgProfile } from "react-icons/cg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop"); // Fixed typo in setMenu
@@ -24,28 +25,35 @@ const Navbar = () => {
     <div>
       <div className="navbar">
         <div className="nav-logo">
-          <img src={logo} alt="" />
-          <p>MYSHOP</p>
+          <img className='nav-logo-new img' style={{width:"150px"}} src={logo} alt="" />
+       
+          
         </div>
         <img onClick={dropdown_toggle} src={arrow_icon} className={`nav-dropdown ${showMenu ? 'open' : ''}`} alt="" /> {/* Added class conditional rendering for dropdown */}
         <ul ref={menuRef} className={`nav-menu ${showMenu ? 'nav-menu-visible' : ''}`}>
           <li onClick={() => { setMenu("shop") }}>
-            <Link style={{ textDecoration: "none" }} to="/"> Shop</Link> {menu === "shop" ? <hr /> : <></>}
+            <NavLink style={{ textDecoration: "none" }} to="/"> Shop</NavLink> {menu === "shop" ? <hr /> : <></>}
           </li>
           <li onClick={() => { setMenu("mens") }}>
-            <Link style={{ textDecoration: "none" }} to="/mens"> Men</Link> {menu === "mens" ? <hr /> : <></>}
+            <NavLink style={{ textDecoration: "none" }} to="/mens"> Men</NavLink> {menu === "mens" ? <hr /> : <></>}
           </li>
           <li onClick={() => { setMenu("womens") }}>
-            <Link style={{ textDecoration: "none" }} to="/womens"> Women</Link> {menu === "womens" ? <hr /> : <></>}
+            <NavLink style={{ textDecoration: "none" }} to="/womens"> Women</NavLink> {menu === "womens" ? <hr /> : <></>}
           </li>
           <li onClick={() => { setMenu("kids") }}>
-            <Link style={{ textDecoration: "none" }} to="/kids"> Kids</Link> {menu === "kids" ? <hr /> : <></>}
+            <NavLink style={{ textDecoration: "none" }} to="/kids"> Kids</NavLink> {menu === "kids" ? <hr /> : <></>}
           </li>
-        </ul>
-        <div className="nav-login-cart">
-          <Link to="/login" className='login-btn'><button>Login</button></Link>
+        </ul> 
+       
+        <div className="nav-login-cart d-flex">
+         
+          <Link to="/login" className='login-btn'><button>Login </button></Link>
+          
+          <i class="fa-solid fa-user"></i>
+          <h1 className='text-dark fs-1 profil-dak' ><Link to="/login"> <CgProfile className='text-dark ' /></Link></h1>
           <Link to="/cart"><img src={cart_icon} alt="" /></Link>
           <div className="nav-cart-count">{getTotalCartItems()}</div>
+        
         </div>
       </div>
     </div>
