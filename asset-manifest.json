@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fashion-store-Ecommerce-/static/css/main.0fec49fd.css",
-    "main.js": "/Fashion-store-Ecommerce-/static/js/main.1e0b641b.js",
+    "main.js": "/Fashion-store-Ecommerce-/static/js/main.1cf6c980.js",
     "static/js/453.d855a71b.chunk.js": "/Fashion-store-Ecommerce-/static/js/453.d855a71b.chunk.js",
     "static/media/banner_kids.png": "/Fashion-store-Ecommerce-/static/media/banner_kids.fff815a581793a7380fb.png",
     "static/media/banner_women.png": "/Fashion-store-Ecommerce-/static/media/banner_women.5a27fc4e4533e57e4676.png",
@@ -48,11 +48,11 @@
     "static/media/arrow.jpg": "/Fashion-store-Ecommerce-/static/media/arrow.57b9cf02a0118142697a.jpg",
     "index.html": "/Fashion-store-Ecommerce-/index.html",
     "main.0fec49fd.css.map": "/Fashion-store-Ecommerce-/static/css/main.0fec49fd.css.map",
-    "main.1e0b641b.js.map": "/Fashion-store-Ecommerce-/static/js/main.1e0b641b.js.map",
+    "main.1cf6c980.js.map": "/Fashion-store-Ecommerce-/static/js/main.1cf6c980.js.map",
     "453.d855a71b.chunk.js.map": "/Fashion-store-Ecommerce-/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fec49fd.css",
-    "static/js/main.1e0b641b.js"
+    "static/js/main.1cf6c980.js"
   ]
 }
