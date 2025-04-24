@@ -18,6 +18,7 @@ const ShopContextProvider=(props)=>{
 const addToCart=(itemId)=>{
 setCartItem((prev)=>({...prev,[itemId]:prev[itemId]+1}))
 console.log(CartItem)
+alert("Added Successfully")
 }
 
 const removeFromCart=(itemId)=>{

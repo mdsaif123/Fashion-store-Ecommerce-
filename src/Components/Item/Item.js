@@ -35,10 +35,10 @@ const Item = (props) => {
             <div className=" card-body">
             <p>{props.name}</p>
                 <div className="item-price-new">
-                    <p style={{color:"#ff6518"}}>${props.new_price}</p>
+                    <p style={{color:"#ff6518"}}>₹{props.new_price}</p>
                 </div>
                 <div className="item-price-old">
-                    <p>${props.old_price}</p>
+                    <p>₹{props.old_price}</p>
                 </div>
             </div>
         </div>
